@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Whiteout Transfer Network</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="container-fluid">
+<ul>
+<li><strong>Whiteout Transfer Network</strong></li>
+</ul>
+
+<ul>
+<li><a href="#">Players</a></li>
+<li><a href="#">Alliances</a></li>
+<li><a href="#">States</a></li>
+<li><a href="#" role="button">Create Profile</a></li>
+</ul>
+</nav>
+
+<main class="container">
+
+<h2>Transfer Player Database</h2>
+
+<input id="searchPower" placeholder="Minimum Power">
+<button onclick="loadPlayers()">Search</button>
+
+<div id="playerList"></div>
+
+<hr>
+
+<h3>Create Transfer Profile</h3>
+
+<input id="name" placeholder="Player Name">
+<input id="state" placeholder="Current State">
+<input id="power" placeholder="Power">
+<input id="furnace" placeholder="Furnace Level">
+<input id="role" placeholder="Role">
+
+<button onclick="addPlayer()">Submit</button>
+
+</main>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
